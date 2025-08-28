@@ -1,27 +1,22 @@
 const user = {
-    username: "Abdullayev",
-    password: "11111177",
-    get getPassword() {
-      
-        return this.password;
-        
-    },
-    set setNewPassword(newPassword) {
-        this.password = newPassword
-    },
-    
-    get getFullInfo() {
-        return `Parol: ${this.setNewPassword}`
-    },
-   
-    
+  username: "Abdullayev",
+  password: "11111177",
+
+  get getPassword() {
+    return this.password;
+  },
+
+  set setPassword(newPassword) {
+    if (newPassword === this.password) {
+      console.log("Yangi parol eskisi bilan bir xil! Qayta kiriting.");
+    } else {
+      this.password = newPassword;
+      console.log("Parol yangilandi!");
+    }
+  }
 };
 
- if (user.password === user.setNewPassword ) {
-       alert("Yangi parol eskisi bilan bir hil qayta kiriting:");
-        
-    }else{
-        console.log(user.getFullInfo);
-    }
-
-setNewPassword(45564654);
+console.log("Eski parol:", user.getPassword);
+user.setPassword = "11111177"; 
+user.setPassword = "12345678"; 
+console.log("Yangi parol:", user.getPassword);
