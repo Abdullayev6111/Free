@@ -1,0 +1,393 @@
+.firm {
+    width: 100%;
+    &-content1 {
+        width: 80%;
+        height: 400px;
+        margin: 40px auto;
+        h1 {
+            color: $text-black;
+            font-size: 38px;
+            font-family: kopeek20;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        &-body {
+            display: flex;
+            gap: 30px;
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: $text-black;
+                font-family: kopeek20;
+            }
+            img {
+                width: 550px;
+                height: 280px;
+            }
+        }
+    }
+    &-content2 {
+        height: 500px;
+        width: 80%;
+        margin: 50px auto;
+        h1 {
+        font-family: kopeek20;
+        font-size: 45px;
+        font-weight: 400;
+        color: $text-black;
+        margin-bottom: 10px
+
+    }
+    &-body {
+        @include flex-between();
+        // gap: 20px;
+        &-card1 {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            h1 {
+            font-family: kopeek20;
+            font-size: 45px;
+            color: $text-black;
+            font-weight: 400;
+            }
+            h2 {
+            font-family: kopeek20;
+            font-size: 16px;
+            color: $text-black;
+            font-weight: 400;
+            margin-top: 25px;
+            width: 83px;
+            }
+
+        }
+        &-card2 {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            h1 {
+            font-family: kopeek20;
+            font-size: 45px;
+            color: $text-black;
+            font-weight: 400;
+            }
+            h2 {
+            font-family: kopeek20;
+            font-size: 16px;
+            color: $text-black;
+            font-weight: 400;
+            margin-top: 25px;
+            width: 107px;
+            }
+        }
+        &-card3 {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            h1 {
+            font-family: kopeek20;
+            font-size: 45px;
+            color: $text-black;
+            font-weight: 400;
+            }
+            h2 {
+            font-family: kopeek20;
+            font-size: 16px;
+            color: $text-black;
+            font-weight: 400;
+            margin-top: 25px;
+            width: 122px;
+            }
+        }
+        &-card4 {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            h1 {
+            font-family: kopeek20;
+            font-size: 45px;
+            color: $text-black;
+            font-weight: 400;
+            }
+            h2 {
+            font-family: kopeek20;
+            font-size: 16px;
+            color: $text-black;
+            font-weight: 400;
+            margin-top: 25px;
+            }
+        }
+        &-card5 {
+           display: flex;
+            flex-direction: row;
+            gap: 5px;
+            h1 {
+            font-family: kopeek20;
+            font-size: 45px;
+            color: $text-black;
+            font-weight: 400;   
+            }
+            h2 {
+            font-family: kopeek20;
+            font-size: 16px;
+            color: $text-black;
+            font-weight: 400;
+            margin-top: 25px;
+            width: 250px;
+            }
+        }
+    }
+    }
+    &-content3 {
+        width: 80%;
+        height: 450px;
+        margin: 40px auto;
+        h1 {
+            font-family: kopeek20;
+            font-size: 38px;
+            font-weight: 400;
+            color: $text-black;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        &-body {
+            display: flex;
+            gap: 20px;
+            &-right {
+                flex: 1;
+                img {
+                    width: 500px;
+                    height: 350px;
+                    
+                }
+            }
+            &-left {
+                flex: 1;
+                p {
+                    font-family: kopeek20;
+                    font-size: 18px;
+                    color: $text-black;
+                    font-weight: 400;
+                }
+                h5 {
+                    font-family: koeek20;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $text-white;
+                    width: 410px;
+                    height: 75px;
+                    margin-top: 20px;
+                    background-color: $primary-color;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        &-content1 {
+            width: 92%;
+            height: 350px;
+            margin: 40px auto;
+            h1 {
+                font-size: 34px;
+            }
+            &-body {
+                img {
+                    width: 400px;
+                    height: 250px;
+                }
+            }
+        }
+        &-content2 {
+            width: 92%;
+            margin: 20px auto;
+            h1 {
+                font-size: 45px;
+            }
+        }
+        &-content3 {
+            width: 92%;
+            height: 350px;
+            h1 {
+                font-size: 34px;
+            }
+            &-body {
+                &-left {
+                    p {
+                        font-size: 16px;
+                    }
+                    h5 {
+                        font-size: 16px;
+                        width: 385px;
+                        height: 65px;
+                    }
+                }
+                &-right {
+                    img {
+                        width: 530px;
+                        height: 295px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-content1 {
+            height: 650px;
+            h1 {
+                font-size: 34px;
+            }
+            &-body {
+                flex-wrap: wrap;
+                img {
+                    width: 450px;
+                    height: 302px;
+                }
+                p {
+                    width: 460px;
+                }
+            }
+        }
+        &-content2  {
+            height: 700px;
+            h1 {
+                font-size: 40px;
+            }
+            &-body {
+                gap: 100px;
+                flex-wrap: wrap;
+            }
+        }
+        &-content3 {
+            width: 92%;
+            margin: 50px auto;
+            height: 700px;
+            h1 {
+                text-align: left;
+            }
+           &-body {
+            flex-wrap: wrap;
+            flex-direction: column;
+            &-right {
+                width: 100%;
+                order: -1;
+                img {
+                    width: 100%;
+                    height: 80%;
+                }
+
+            }
+            &-left {
+                p {
+                    width: 530px;
+
+                }
+                h5 {
+                    width: 530px;
+                    height: 67px;
+                    line-height: 30px;
+                }
+            }
+
+           }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-content1 {
+            h1 {
+                font-size: 32px;
+            }
+            &-body {
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+        &-content2 {
+            height: 750px;
+            h1 {
+                font-size: 33px;
+            }
+            &-body {
+                flex-direction: column;
+                margin-top: 50px;
+                gap: 15px;
+                &-card1 {
+                    h2 {
+                        width: 160px;
+                        margin-top: 10px;
+                        margin-left: 50px;
+                    }
+                }
+                &-card2 {
+                    h2 {
+                        width: 163px;
+                        margin-top: 10px;
+                        margin-left: 50px;
+                    }
+                }
+                &-card3 {
+                    h2 {
+                        width: 163px;
+                        margin-top: 10px;
+                        margin-left: 50px;
+                    }
+                }
+                &-card4 {
+                    h2 {
+                        margin-top: 10px;
+                        margin-left: 50px;
+                    }
+                }&-card5 {
+                    h2 {
+                        width: 260px;
+                        margin-top: 10px;
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+        &-content3 {
+            &-body {
+                &-left {
+                    p {
+                        width: 400px;
+                    }
+                    h5 {
+                        width: 450px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    @media (max-width: 360px) {
+        &-content1 {
+            height: 800px;
+            h1 {
+                width: 290px;
+                font-size: 32px;
+            }
+        }
+        &-content2 {
+            height: 850px;
+            h1 {
+                font-size: 30px;
+            }
+        }
+        &-content3 {
+            p {
+                width: 300px;
+            }
+            h5 {
+                width: 320px;
+            }
+        }
+    }
+    
+}

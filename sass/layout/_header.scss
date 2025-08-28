@@ -1,0 +1,243 @@
+.hero {
+    width: 100%;
+    height: 800px;
+    background-image: url(../../images/hero-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-header {
+        display: flex;
+        padding: 25px 150px;
+    h2 {
+        color: $text-white;
+        font-size: 15px;
+        font-family: kopeek20;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+    h3 {
+        color: $text-white;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: kopeek20;
+        width: 204px;
+        height: 36px;
+        border: 1px solid $text-white;
+        border-radius: 15px;
+        margin-left: 300px;
+        @include flex-center();
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+    .circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid $text-white;
+        margin-left: 20px;
+        @include flex-center();
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+    }
+    &-content {
+        width: 560px;
+        margin-top: 180px;
+        margin-left: 80px;
+        h1 {
+            font-weight: 400;
+            font-family: kopeek20;
+            font-size: 55px;
+            color: $text-black;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 34px;
+            color: $text-black;
+            margin-top: 10px;
+            font-family: kopeek20;
+        }
+        &-footer {
+            margin-top: 30px;
+            &-button1 {
+                width: 186px;
+                height: 71px;
+                border-radius: 40px;
+                border: 2px solid $text-white;
+                padding: 23px 47px;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: kopeek20;
+                color: $text-black;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $text-white;
+                }
+            }
+            &-button2 {
+                width: 228px;
+                height: 71px;
+                border-radius: 40px;
+                border: 2px solid $text-white;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 23px 47px;
+                font-family: kopeek20;
+                color: $text-black;
+                cursor: pointer;
+                margin-left: 20px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $text-white;
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        &-header {
+            padding: 25px 50px;
+            h2 {
+                margin-left: 10px;
+            }
+        }
+        &-content {
+            margin-left: 50px;
+            h1 {
+                font-size: 45px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            &-footer {
+                &-button1 {
+                    width: 176px;
+                    height: 60px;
+                    font-size: 16px;
+
+                }
+                &-button2 {
+                    width: 213px;
+                    height: 60px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        background-image: url(../../images/logo768.png);
+        &-header {
+            padding: 25px 40px;
+            h2 {
+                font-size: 14px;
+
+            }
+            h3 {
+                display: none;
+            }
+            .circle {
+                display: none;
+            }
+        }
+        &-content {
+            width: 490px;
+            h1 {
+                font-size: 40px;
+                color: $text-white;
+            }
+            h2 {
+                font-size: 26px;
+                color: $text-white;
+            }
+            &-footer {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                &-button1 {
+                    width: 212px;
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+                &-button2 {
+                    width: 212px;
+                    font-size: 16px;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        background-image: url(../../images/logo768.png);
+        height: 700px;
+        &-content {
+            width: 450px;
+            margin-top: 150px;
+            h1 {
+                font-size: 30px;
+                width: 330px;
+            }
+            h2 {
+                font-size: 20px;
+                width: 185px;
+            }
+            &-footer {
+                flex-direction: row;
+                &-button1 {
+                    width: 170px;
+                    height: 50px;
+                    font-size: 15px;
+                    padding: 18px 47px;
+                }
+                &-button2 {
+                    width: 206px;
+                    height: 50px;
+                    font-size: 15px;
+                    margin-top: 20px;
+                    padding: 18px 47px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 360px) {
+        background-image: url(../../images/logo768.png);
+        &-header {
+            padding: 25px 30px;
+            h2 {
+                width: 115px;
+            }
+        }
+        &-content {
+            margin-top: 50px;
+            margin-left: 30px;
+            h1 {
+                width: 240px;
+
+            }
+            h2 {
+                width: 184px;
+            }
+            &-footer {
+                flex-direction: column;
+                margin-top: 10px;
+                gap: 20px;
+                &-button2 {
+                    order: -1;
+                }
+                &-button1 {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
