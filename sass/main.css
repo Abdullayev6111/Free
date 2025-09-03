@@ -680,7 +680,40 @@
   color: #2B59C3;
   border: 1px solid #2B59C3;
 }
-
+@media (max-width: 992px) {
+  .cards-1-content button {
+    height: 61px;
+    font-size: 16px;
+  }
+  .cards-main-btn {
+    width: 214px;
+    height: 68px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .cards-1 {
+    width: 92%;
+  }
+  .cards-main-btn {
+    margin: 0 300px;
+  }
+}
+@media (max-width: 576px) {
+  .cards-1 button {
+    height: 50px;
+    width: 231px;
+    font-size: 18px;
+    line-height: 10px;
+    margin-left: 50px;
+  }
+  .cards-1 h1 {
+    font-size: 33px;
+  }
+  .cards-main-btn {
+    margin: 0 200px;
+  }
+}
 .gift {
   width: 100%;
   margin-top: 100px;
@@ -794,4 +827,67 @@
   color: #2B59C3;
   border: 2px solid #2B59C3;
   background-color: white;
+}
+@media (max-width: 992px) {
+  .gift-bottom-content button {
+    margin-top: 30px;
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  .gift-top {
+    width: 92%;
+  }
+  .gift-top-content {
+    flex-direction: column;
+  }
+  .gift-top-content img {
+    width: 70%;
+  }
+  .gift-top-content-right {
+    width: 70%;
+  }
+  .gift-bottom {
+    width: 92%;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .gift-bottom h1 {
+    font-size: 34px;
+  }
+  .gift-bottom h2 {
+    font-size: 20px;
+  }
+  .gift-bottom form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 120px;
+  }
+  .gift-bottom button {
+    margin-top: 10px;
+    position: absolute;
+    top: 400px;
+    left: 0;
+  }
+  .gift-bottom div {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 576px) {
+  .gift-top {
+    width: 92%;
+  }
+  .gift-top h3 {
+    font-size: 32px;
+  }
+  .gift-top img {
+    width: 100%;
+  }
+  .gift-top-content-right {
+    width: 90%;
+  }
+  .gift-bottom-content-input {
+    width: 380px;
+  }
 }/*# sourceMappingURL=main.css.map */

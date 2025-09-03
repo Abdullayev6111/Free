@@ -113,4 +113,81 @@
             }
         }
     }
+    @media (max-width:992px) {
+        &-bottom {
+            &-content {
+                button {
+                    margin-top: 30px;
+                    flex: 1;
+                }
+            }
+        }
+    }
+    @media (max-width:768px) {
+        &-top {
+            width: 92%;
+            &-content {
+                flex-direction: column;
+               img {
+                width: 70%;
+               }
+               &-right {
+                width: 70%;
+               }
+            }
+        }
+        &-bottom {
+            width: 92%;
+            position: relative;
+            margin-bottom: 100px;
+            h1 {
+                font-size: 34px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 120px;
+            }
+            button {
+                margin-top: 10px;
+                position: absolute;
+                top: 400px;
+                left: 0;
+
+            }
+            div {
+                margin-top: -70px;
+            }
+        }
+    }
+    @media (max-width:576px) {
+        &-top {
+            width: 92%;
+            h3 {
+                font-size: 32px;
+            }
+            img {
+                width: 100%;
+            }
+            &-content {
+                &-right {
+                    width: 90%;
+                }
+            }
+        }
+        &-bottom {
+            &-content{
+                &-input {
+                    width: 380px;
+                }
+            }
+        }
+    }
+    @media (max-width:360px) {
+        
+    }
 }
