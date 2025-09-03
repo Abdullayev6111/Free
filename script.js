@@ -58,3 +58,27 @@
 // } else {
 //     console.log(0);
 // }
+
+
+// const countText = document.getElementById("count");
+// const startBtn = document.getElementById("start");
+// const stopBtn = document.getElementById("stop");
+// const clearBtn = document.getElementById("clear");
+// let count = 0;
+// let interval;
+// startBtn.addEventListener("click", ()=>{
+//     interval = setInterval(()=> {
+//         count ++;
+//         countText.innerHTML=count;
+//     }, 1000);
+// });
+
+// stopBtn.addEventListener("click", ()=>{
+//     clearInterval(interval);
+// });
+
+// clearBtn.addEventListener("click", ()=>{
+//     count = 0;
+//     countText.innerHTML=count;
+//     clearInterval(interval);
+// })
