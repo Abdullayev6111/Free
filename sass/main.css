@@ -608,4 +608,190 @@
   .firm-content3 h5 {
     width: 320px;
   }
+}
+
+.cards {
+  width: 100%;
+  margin-top: 50px;
+}
+.cards-1 {
+  width: 80%;
+  margin: 80px auto;
+}
+.cards-1 img {
+  width: 100%;
+}
+.cards-1-content {
+  margin-top: 30px;
+  display: flex;
+  gap: 80px;
+}
+.cards-1-content h1 {
+  font-family: kopeek20;
+  font-weight: 400;
+  font-size: 55px;
+  color: black;
+}
+.cards-1-content button {
+  width: 231px;
+  height: 71px;
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 23px 47px;
+  gap: 10px;
+  font-family: kopeek20;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.cards-1-content button:hover {
+  background-color: #2B59C3;
+  color: white;
+  border: none;
+}
+.cards-1 p {
+  width: 233px;
+  font-family: kopeek20;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin-top: 10px;
+}
+.cards-main-btn {
+  width: 250px;
+  height: 75px;
+  border-radius: 40px;
+  padding: 23px 46px;
+  font-family: kopeek20;
+  font-weight: 400;
+  color: white;
+  border: none;
+  gap: 10px;
+  font-size: 26px;
+  background-color: #2B59C3;
+  margin: 0px 460px;
+  transition: all 0.3s ease;
+}
+.cards-main-btn:hover {
+  background-color: white;
+  color: #2B59C3;
+  border: 1px solid #2B59C3;
+}
+
+.gift {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.gift-top {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.gift-top h3 {
+  font-family: kopeek20;
+  font-weight: 400;
+  font-size: 38px;
+  color: black;
+  margin-bottom: 10px;
+}
+.gift-top-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.gift-top-content img {
+  width: 50%;
+  height: 370px;
+}
+.gift-top-content-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gift-top-content-right h1 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: kopeek20;
+  color: white;
+  background-color: #2B59C3;
+  padding: 10px 30px 10px 10px;
+  border-radius: 5px;
+}
+.gift-top-content-right h1 span {
+  font-size: 26px;
+}
+.gift-top-content-right h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: kopeek20;
+  color: black;
+}
+.gift-bottom {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.gift-bottom h1 {
+  font-family: kopeek20;
+  font-weight: 400;
+  font-size: 38px;
+  color: black;
+}
+.gift-bottom h2 {
+  font-family: kopeek20;
+  font-weight: 400;
+  font-size: 26px;
+  color: black;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+.gift-bottom-content-checkbox-btn {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.gift-bottom-content h3 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: kopeek20;
+  color: #2B59C3;
+}
+.gift-bottom-content h3 span {
+  color: black;
+}
+.gift-bottom-content-input {
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  padding: 20px;
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: kopeek20;
+}
+.gift-bottom-content button {
+  width: 228px;
+  height: 71px;
+  padding: 23px 47px;
+  font-family: kopeek20;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  border-radius: 40px;
+  gap: 10px;
+  background-color: #2B59C3;
+  border: none;
+  transition: all 0.3s ease;
+}
+.gift-bottom-content button:hover {
+  color: #2B59C3;
+  border: 2px solid #2B59C3;
+  background-color: white;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,71 @@
+.cards {
+    width: 100%;
+    margin-top: 50px;
+    
+    &-1 {
+        width: 80%;
+        margin: 80px auto;
+        img {
+            width: 100%;
+        }
+        &-content {
+            margin-top: 30px;
+            display: flex;
+            gap: 80px;
+            h1 {
+                font-family: kopeek20;
+                font-weight: 400;
+                font-size: 55px;
+                color: $text-black;
+            }
+            button {
+                width: 231px;
+                height: 71px;
+                border-radius: 40px;
+                border: 1px solid $text-black;
+                padding: 23px 47px;
+                gap: 10px;
+                font-family: kopeek20;
+                font-weight: 400;
+                font-size: 18px;
+                color: $text-black;
+                background-color: $text-white;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $text-white;
+                    border: none;
+                }
+            }
+        }
+        p {
+            width: 233px;
+            font-family: kopeek20;
+            font-size: 18px;
+            font-weight: 400;
+            color: $text-black;
+            margin-top: 10px;
+        }
+    }
+    &-main-btn  {
+        width: 250px;
+        height: 75px;
+        border-radius: 40px;
+        padding: 23px 46px;
+        font-family: kopeek20;
+        font-weight: 400;
+        color: $text-white;
+        border: none;
+        gap: 10px;
+        font-size: 26px;
+        background-color: $primary-color;
+        margin: 0px 460px;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $text-white;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+}
