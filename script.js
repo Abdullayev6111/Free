@@ -1,61 +1,60 @@
-// User password
+// String-2
 
-// const user = {
-//   username: "Abdullayev",
-//   password: "11111177",
+// let n = +prompt("Son kiriting:");
+// if (n >= 32 && n <= 126) {
+//     let charCode = String.fromCharCode(n);
+//     console.log(charCode);
+// } else {
+//     console.log("Kiritilgan son 32 dan 126 gacha bo'lishi kerak!");
+// }
 
-//   get getPassword() {
-//     return this.password;
-//   },
+// String-3
 
-//   set setPassword(newPassword) {
-//     if (newPassword === this.password) {
-//       console.log("Yangi parol eskisi bilan bir xil! Qayta kiriting.");
-//     } else {
-//       this.password = newPassword;
-//       console.log("Parol yangilandi!");
-//     }
-//   }
-// };
+// let n = +prompt("Son kiriting:");
+// if (n >= 32 && n <= 126) {
+//     let charCode1 = String.fromCharCode(n-1);
+//     let charCode2 = String.fromCharCode(n+1);
+//     console.log(charCode1);
+//     console.log(charCode2);
+// } else {
+//     console.log("Kiritilgan son 32 dan 126 gacha bo'lishi kerak!");
+// }
 
-// console.log("Eski parol:", user.getPassword);
-// user.setPassword = "11111177"; 
-// user.setPassword = "12345678"; 
-// console.log("Yangi parol:", user.getPassword);
+// String-4
 
-// Kalkulyator
+// let n = +prompt("Son kiriting:");
+// if (n >= 1 && n <= 26) {
+//     let charCode = String.fromCharCode(n + 64);
+//     console.log(charCode);
+// } else {
+//     console.log("Kiritilgan son 1 dan 26 gacha bo'lishi kerak!");
+// }
 
-// const calculator = {
-//   a: 0,
-//   b: 0,
+// String-5
 
-//   setValues(x, y) {
-//     this.a = x;
-//     this.b = y;
-//   },
+// let n = +prompt("Son kiriting:");
+// if (n >= 1 && n <= 26) {
+//     let charCode = String.fromCharCode(122-(n-1));
+//     console.log(charCode);
+// } else {
+//     console.log("Kiritilgan son 1 dan 26 gacha bo'lishi kerak!");
+// }
 
-//   sum() {
-//     return this.a + this.b;
-//   },
+// String-6
 
-//   subtract() {
-//     return this.a - this.b;
-//   },
-
-//   multiply() {
-//     return this.a * this.b;
-//   },
-
-//   divide() {
-//     if (this.b === 0) {
-//       return "0 ga bo'lish mumkin emas!";
-//     }
-//     return this.a / this.b;
-//   }
-// };
-
-// calculator.setValues(12, 4);
-// console.log("Yig'indisi:", calculator.sum());
-// console.log("Ayirmasi:", calculator.subtract());
-// console.log("Ko'paytmasi:", calculator.multiply());
-// console.log("Bo'linmasi:", calculator.divide());
+// let n = +prompt("Belgi kiriting:");
+// if (n >= 33 && n <= 47 || n >= 58 && n <= 64 || n >= 91 && n <= 96 || n >= 123 && n <= 126) {
+//     console.log("Belgi");
+//     let charCode = String.fromCharCode(n);
+//     console.log(charCode);
+// } else if (n >= 48 && n <= 57) {
+//     console.log("Digit");
+//     let charCode = String.fromCharCode(n);
+//     console.log(charCode);
+// } else if (n >= 65 && n <= 90 || n >= 97 && n <= 122) {
+//     console.log("Lotin");
+//     let charCode = String.fromCharCode(n);
+//     console.log(charCode);
+// } else {
+//     console.log(0);
+// }
