@@ -2,7 +2,7 @@
     width: 80%;
     margin: 0 auto;
     @include flex-between();
-    gap: 30px;
+    gap: 20px;
     &-card1 {
         height: 770px;
         width: 200px;
@@ -24,12 +24,55 @@
         height: 770px;
         @include flex-between();
         flex-direction: column;
-
+        padding: 50px 10px;
         h2 {
             font-size: 38px;
             color: #868686;
             font-family: kopeek20;
             font-weight: 400;
+            margin-top: -50px;
+        }
+        h1 {
+            font-family: kopeek20;
+            font-weight: 400;
+            color: $text-black;
+            font-size: 15px;
+        }
+    }
+    &-card3 {
+        width: 260px;
+        height: 770px;
+        @include flex-between();
+        flex-direction: column;
+        padding: 50px 10px;
+        border: 4px solid $primary-color;
+        border-radius: 10px;
+        h2 {
+            font-size: 38px;
+            color: $primary-color;
+            font-family: kopeek20;
+            font-weight: 400;
+            margin-top: -50px;
+        }
+        h1 {
+            font-family: kopeek20;
+            font-weight: 400;
+            color: $text-black;
+            font-size: 15px;
+        }
+    }
+    &-card4 {
+        width: 260px;
+        height: 770px;
+        @include flex-between();
+        flex-direction: column;
+        padding: 50px 10px;
+        h2 {
+            font-size: 34px;
+            color: #868686;
+            font-family: kopeek20;
+            font-weight: 400;
+            margin-top: -50px;
         }
         h1 {
             font-family: kopeek20;
