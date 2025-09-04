@@ -1,0 +1,41 @@
+.freelance {
+    width: 80%;
+    margin: 0 auto;
+    @include flex-between();
+    gap: 30px;
+    &-card1 {
+        height: 770px;
+        width: 200px;
+        background-color: $primary-color;
+        @include flex-between();
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        padding: 60px 10px;
+        h1 {
+            font-family: kopeek20;
+            font-weight: 400;
+            font-size: 24px;
+            color: $text-white;
+        }
+    }
+    &-card2 {
+        width: 260px;
+        height: 770px;
+        @include flex-between();
+        flex-direction: column;
+
+        h2 {
+            font-size: 38px;
+            color: #868686;
+            font-family: kopeek20;
+            font-weight: 400;
+        }
+        h1 {
+            font-family: kopeek20;
+            font-weight: 400;
+            color: $text-black;
+            font-size: 15px;
+        }
+    }
+}
