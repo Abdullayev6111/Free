@@ -6,7 +6,6 @@
         font-size: 55px;
         font-weight: 400;
         color: $text-black;
-
     }
     &-cards {
         margin-bottom: 30px;
@@ -19,13 +18,12 @@
                 font-size: 15px;
                 font-weight: 400;
                 font-family: kopeek20;
-
             }
             &-content {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                margin-right: 70    px;
+                margin-right: 70 px;
                 h3 {
                     width: 280px;
                     font-family: kopeek20;
@@ -35,5 +33,48 @@
                 }
             }
         }
+    }
+    @media (max-width: 992px) {
+        width: 92%;
+        h1 {
+            font-size: 45px;
+        }
+        &-cards {
+            &-1 {
+                &-content {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 35px;
+        }
+        &-cards {
+            &-1 {
+                flex-wrap: wrap;
+                gap: 50px;
+                &-content {
+                    width: 100%;
+                    flex: -1;
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &-cards {
+            &-1 {
+                gap: 30px;
+                h2 {
+                    font-size: 12px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    @media (max-width: 360px) {
     }
 }

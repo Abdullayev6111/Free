@@ -1,0 +1,128 @@
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    &-content {
+        display: flex;
+        gap: 100px;
+        &-left {
+            h1 {
+                font-family: kopeek20;
+                font-weight: 400;
+                color: $text-black;
+                font-size: 38px;
+                margin-bottom: 30px;
+            }
+            &-input {
+                width: 440px;
+                height: 70px;
+                border-radius: 10px;
+                border: 1px solid $text-black;
+                outline: none;
+                padding: 25px;
+                font-family: kopeek20;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            &-checkbox {
+                width: 18px;
+                height: 18px;
+                border-radius: 5px;
+                border: 1px solid $text-black;
+            }
+            h2 {
+                font-size: 18px;
+                font-family: kopeek20;
+                font-weight: 400;
+                color: $primary-color;
+                span {
+                    color: $text-black;
+                }
+            }
+            button {
+                width: 228px;
+                height: 71px;
+                padding: 23px 47px;
+                font-size: 18px;
+                font-family: kopeek20;
+                font-weight: 400;
+                border-radius: 40px;
+                background-color: $primary-color;
+                color: $text-white;
+                border: none;
+                gap: 10px;
+                margin-top: 30px;
+            }
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1 {
+                font-family: kopeek20;
+                font-weight: 400;
+                font-size: 38px;
+                color: $text-black;
+            }
+            h2 {
+                font-family: kopeek20;
+                font-weight: 400;
+                font-size: 26px;
+                color: $text-black;
+                margin-top: 10px;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        &-content {
+            &-left {
+                h1 {
+                    font-size: 32px;
+                }
+                button {
+                    width: 213px;
+                    height: 60px;
+                    font-size: 16px;
+                }
+            }
+            &-right {
+                h1 {
+                    font-size: 34px;
+                }
+                h2 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        width: 92%;
+        &-content {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 576px) {
+        margin-top: 50px;
+        &-content {
+        }
+    }
+    @media (max-width: 360px) {
+        &-content {
+            &-left {
+                text-align: center;
+                &-input {
+                    width: 290px;
+                    height: 60px;
+                    margin: 0 auto;
+                }
+                &-checkbox {
+                    margin-left: 50px;
+                }
+            }
+            &-right {
+                text-align: center;
+                margin-top: -30px;
+            }
+        }
+    }
+}

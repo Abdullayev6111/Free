@@ -1,0 +1,63 @@
+.foundation {
+    width: 100%;
+    height: 900px;
+    background-image: url(../../images/foundation-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 50px;
+    h1 {
+        font-family: kopeek20;
+        font-weight: 400;
+        font-size: 50px;
+        color: $text-white;
+        text-align: left;
+        margin-left: 250px;
+        padding-top: 240px;
+        margin-bottom: 30px;
+    }
+    &-content {
+        @include flex-center();
+        align-items: normal;
+        gap: 50px;
+        h2 {
+            color: $text-white;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: kopeek20;
+            width: 160px;
+        }
+        h3 {
+            color: $text-white;
+            font-size: 55px;
+            margin-right: -40px;
+            margin-top: -25px;
+        }
+    }
+    @media (max-width: 992px) {
+        h1 {
+            font-size: 45px;
+            margin-left: 50px;
+            padding-top: 100px;
+        }
+    }
+    @media (max-width: 768px) {
+        h1 {
+            padding-top: 40px;
+            font-size: 40px;
+            margin-left: 20px;
+        }
+        &-content {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    @media (max-width: 576px) {
+        display: none;
+    }
+    @media (max-width: 360px) {
+        display: none;
+    }
+}

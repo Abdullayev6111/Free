@@ -3,6 +3,8 @@
     margin: 0 auto;
     @include flex-between();
     gap: 20px;
+    margin-bottom: 30px;
+    margin-top: 150px;
     &-card1 {
         height: 770px;
         width: 200px;
@@ -80,5 +82,19 @@
             color: $text-black;
             font-size: 15px;
         }
+    }
+    @media (max-width: 992px) {
+        width: 92%;
+    }
+    @media (max-width: 768px) {
+        &-card1 {
+            display: none;
+        }
+    }
+    @media (max-width: 576px) {
+        display: none;
+    }
+    @media (max-width: 360px) {
+        display: none;
     }
 }
